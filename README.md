@@ -10,4 +10,4 @@ Click [Here](https://adminlte.io/).
 Clone data in folder AdminLTE/pages.
 
 ### 3. Edit File
-Edit file in folder pkbl.
+Edit file in folder AdminLTE/pages/pkbl.
