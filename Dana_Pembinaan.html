@@ -90,7 +90,7 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">LABELS</li>
         <li><a href="Akuntansi.html"><i class="fa fa-circle-o text-blue"></i> <span>Kolektibilitas</span></a></li>
-        <li><a href="Dana_Pembinaan.html"><i class="fa fa-circle-o text-green"></i> <span>Dana Pembinaan</span></a></li>
+        <li><a href="#"><i class="fa fa-circle-o text-green"></i> <span>Dana Pembinaan</span></a></li>
       </ul>
 
     </section>
@@ -110,9 +110,68 @@
 
           <!-- /.box -->
 
+          <!-- /.box-header -->
+          <!-- form start -->
+        <div class="box-header">
+          <h3>Data Pembinaan Kemitraan</h3>
+        </div>
+          <div class="box box-info">
+          <left>
+            <form class="form-horizontal">
+              <div class="box-body">
+                <div class="form-group">
+                  <label for="inputRecord" class="col-sm-2 control-label">No.Record</label>
+
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputJenis" class="col-sm-2 control-label">Jenis</label>
+
+                  <div class="col-sm-4">
+                    <select class="form-control">
+                      <option>Promosi</option>
+                      <option>option 2</option>
+                      <option>option 3</option>
+                      <option>option 4</option>
+                      <option>option 5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputTanggal" class="col-sm-2 control-label">Tanggal</label>
+
+                  <div class="col-sm-4">
+                    <input type="date" class="form-control" id="inputPassword3" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputKegiatan" class="col-sm-2 control-label">Kegiatan</label>
+
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputNilai" class="col-sm-2 control-label">Nilai</label>
+
+                  <div class="col-sm-4">
+                    <input type="number" class="form-control" id="inputPassword3" placeholder="">
+                  </div>
+                </div>
+              </div>
+              <!-- /.box-body -->
+              <div class="box-footer">
+                <button type="submit" class="btn btn-info pull-center">Tambah No ID MB</button>
+              </div>
+              <!-- /.box-footer -->
+            </form>
+          </left>
+        </div>
       <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Piutang Normal</h3>
+              <h3 class="box-title">Sebaran</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -121,21 +180,26 @@
                 <tr>
                   <th>NoID</th>
                   <th>NamaMB</th>
-                  <th>MulaiCicil</th>
-                  <th>Kewajiban</th>
-                  <th>Cicilan</th>
-                  <th>Tunggakan</th>
-                  <th>Telat</th>
-                  <th>Kolek</th>
-                  </tr>
+                  <th>Lokasi</th>
+                </tr>
                 </thead>
                 <tbody>
                 <tr>
                   <td>12</td>
                   <td>slamet</td>
                   <td>01/01/2001</td>
-                  <td>20.000.000</td>
-                  <td>200.000.000</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>slamet</td>
+                  <td>01/01/2001</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>slamet</td>
+                  <td>01/01/2001</td>
+                </tr>
+                <tr>
                   <td>0</td>
                   <td>0</td>
                   <td>Lancar</td>
@@ -144,41 +208,6 @@
                   <td>12</td>
                   <td>slamet</td>
                   <td>01/01/2001</td>
-                  <td>20.000.000</td>
-                  <td>200.000.000</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>Lancar</td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>slamet</td>
-                  <td>01/01/2001</td>
-                  <td>20.000.000</td>
-                  <td>200.000.000</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>Lancar</td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>slamet</td>
-                  <td>01/01/2001</td>
-                  <td>20.000.000</td>
-                  <td>200.000.000</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>Lancar</td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>slamet</td>
-                  <td>01/01/2001</td>
-                  <td>20.000.000</td>
-                  <td>200.000.000</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>Lancar</td>
                 </tr>
                 </tbody>
                 <tfoot>
@@ -186,11 +215,6 @@
                   <th>NoID</th>
                   <th>NamaMB</th>
                   <th>MulaiCicil</th>
-                  <th>Kewajiban</th>
-                  <th>Cicilan</th>
-                  <th>Tunggakan</th>
-                  <th>Telat</th>
-                  <th>Kolek</th>
                 </tr>
                 </tfoot>
               </table>
@@ -205,12 +229,10 @@
               <h3 class="box-title">Action</h3>
             </div>
             <div class="box-body">
-              <button type="button" class="btn btn-default btn-block">Cetak Kol Per Lokasi</button><br>
-              <button type="button" class="btn btn-default btn-block">Cetak Kolektibilitas</button><br>
-              <button type="button" class="btn btn-default btn-block">Cetak Kol Per Sektor</button><br>
-              <button type="button" class="btn btn-default btn-block">Cetak Kol Semua MB</button><br>
-              <button type="button" class="btn btn-default btn-block">Edit Tanggal Reschedulling</button><br>
-              <button type="button" class="btn btn-default btn-block">Division by Zero ???</button><br>
+              <button type="button" class="btn btn-default btn-block">Tambah NoID MB</button><br>
+              <button type="button" class="btn btn-default btn-block">Data Baru</button><br>
+              <button type="button" class="btn btn-default btn-block">Cetak Kartu</button><br>
+              <button type="button" class="btn btn-default btn-block">Rekap</button><br>
               <button type="button" class="btn btn-default btn-block">Tanggal</button><br>
             </div>
           </div></center>
