@@ -305,11 +305,63 @@
                 <button type="button" class="btn btn-default btn-block">Buat Anggaran Tetap</button><br>
               </div>
               <div class="col-xs-3">
-                <button type="button" class="btn btn-default btn-block">Data Jaminan</button><br>
+                <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#modal-jaminan">Data Jaminan</button><br>
               </div>
             </div>
             <!-- /.box-body -->
           </div>
+
+          <div class="modal modal-info fade" id="modal-jaminan">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title">Input Data Jaminan : </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      <label>Tanggal Masuk : </label>
+                      <input type="date" class="form-control" placeholder="Tanggal">
+                
+                      <label>Jenis Jaminan</label>
+                      <select class="form-control">
+                        <option>Sertifikat</option>
+                        <option>option 2</option>
+                        <option>option 3</option>
+                        <option>option 4</option>
+                        <option>option 5</option>
+                      </select>
+                
+                      <label>Jaminan : </label>
+                      <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+
+                      <label>Keterangan : </label>
+                      <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                
+                      <label>Tempat Simpan : </label>
+                      <input type="text" class="form-control">
+
+                      <label>Alamat Jaminan : </label>
+                      <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+               
+                      <label>Tanggal Pengambilan: </label>
+                      <input type="date" class="form-control" placeholder="Tanggal">
+
+                      <label>Keterangan Pengambilan: </label>
+                      <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-outline">Input</button>
+                    </div>
+                  </div>
+            <!-- /.modal-content -->
+                </div>
+          <!-- /.modal-dialog -->
+              </div>
+
           <!-- ./row -->
           <!-- Block buttons -->
           <center><div class="box">
