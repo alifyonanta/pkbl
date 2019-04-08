@@ -309,13 +309,44 @@
                 <button type="button" class="btn btn-default btn-block">Rekap Saldo</button><br>
               </div>
               <div class="col-xs-3">
-                <button type="button" class="btn btn-default btn-block">Jurnal Penerimaan</button><br>
+                <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#modal-jaminan">Jurnal Penerimaan</button><br>
               </div>
               <div class="col-xs-3">
                 <button type="button" class="btn btn-default btn-block">Jurnal Penyaluran</button>
               </div>
             </div>
           </div></center>
+
+          <div class="modal modal-info fade" id="modal-jaminan">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title">Input Data Jaminan : </h4>
+                    </div>
+
+                    <div class="modal-body">
+                      
+                      <input type="date" class="form-control" placeholder="Tanggal"><br>
+                
+                      <button type="button" class="btn btn-default btn-block">Cetak</button><br>
+                      <button type="button" class="btn btn-default btn-block">Copy ke Jurnal Transaksi</button><br>
+                      <button type="button" class="btn btn-default btn-block">Jurnal Transaksi</button><br>
+
+                      <label>Penerimaan angsuran pokok dan jasa tanggal : .../.../...</label><br>
+
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-outline">Input</button>
+                      </div>
+                  </div>
+            <!-- /.modal-content -->
+                </div>
+          <!-- /.modal-dialog -->
+              </div>
+
           <!-- /.box -->
 
           <!-- /.box -->
