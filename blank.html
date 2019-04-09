@@ -28,7 +28,7 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+<body class="fixed hold-transition skin-blue sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
 
@@ -38,7 +38,7 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>PK</b>BL</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>PKBL</b>Inti</span>
+      <span class="logo-lg"><b>PKBL</b> INTI</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -79,9 +79,9 @@
         <div class="input-group">
           <input type="text" name="q" class="form-control" placeholder="Search...">
           <span class="input-group-btn">
-            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-            </button>
-          </span>
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
         </div>
       </form>
       <!-- /.search form -->
@@ -108,6 +108,17 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        OPERASIONAL
+        <small>Data Master Mitra Binaan</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+     <!--    <li><a href="#">UI</a></li>
+        <li class="active">Buttons</li> -->
+      </ol>
+    </section>
     <!-- Main content -->
     <section class="content">
 
@@ -115,57 +126,102 @@
       
             
             <!-- /.box -->
-
+      
       <div class="box">
+        
+       
             <div class="box-header">
               <h3 class="box-title">Data Proposal</h3>
             </div>
             <!-- /.box-header -->
+
               <div class="box-body">
-              
-                <label>Tanggal Masuk : </label>
-                <input type="date" class="form-control" placeholder="Tanggal">
-                
-                <label>Status Proposal : </label>
+                <table class="table table-striped">
+                <tr>
+                  <td>Tanggal Masuk</td>
+                  <td>
+                  <input type="date" class="form-control" placeholder="Tanggal">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Status Proposal </td>
+                  <td>
+                  <input type="text" class="form-control">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Nama </td>
+                  <td>
+                  <input type="text" class="form-control">
+                </td>
+              </tr>
+              <tr>
+                <td>Perusahaan </td>
+                <td>
                 <input type="text" class="form-control">
-                
-                <label>Nama : </label>
-                <input type="text" class="form-control">
-                
-                <label>Perusahaan : </label>
-                <input type="text" class="form-control">
-                
+                </td>
+              </tr>
+              <tr>
                 <div class="form-group">
-                  <label>Alamat Rumah : </label>
-                  <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                  <td>Alamat Rumah </td>
+                  <td>
+                  <textarea class="form-control" rows="3" ></textarea>
+                </td>
                 </div>
-
+              </tr>
+              <tr>
                 <div class="form-group">
-                  <label>Alamat Usaha : </label>
-                  <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                  <td>Alamat Usaha </td>
+                  <td>
+                  <textarea class="form-control" rows="3" ></textarea>
+                </td>
                 </div>
-
-                <label>Lokasi : </label>
+              </tr>
+              <tr>
+                <td>Lokasi </td>
+                <td>
+                  <input type="text" class="form-control">
+                </td>
+              </tr>
+              <tr>
+                <td>Sektor Usaha </td>
+                <td>
                 <input type="text" class="form-control">
-
-                <label>Sektor Usaha : </label>
+              </td>
+              </tr>
+              <tr>
+                <td>Telp/HP </td>
+                <td>
                 <input type="text" class="form-control">
-
-                <label>Telp/HP : </label>
-                <input type="text" class="form-control">
-
-                <label>Mulai Usaha : </label>
+              </td>
+            </tr>
+            <tr>
+                <td>Mulai Usaha </td>
+                <td>
                 <input type="text" class="form-control">  
-
-                <label>No KTP : </label>
+                </td>
+              </tr>
+              <tr>
+                <td>No KTP </td>
+                <td>
                 <input type="text" class="form-control">
-
-                <label>Pengajuan : </label>
+              </td>
+            </tr>
+            <tr>
+                <td>Pengajuan </td>
+                <td>
                 <input type="text" class="form-control"><br>
-
-                <button type="button" class="btn btn-default btn-block">Entry Proposal</button><br>
-                <button type="button" class="btn btn-default btn-block">Edit Proposal</button><br>
+              </td>
+            </tr>
+          </table>
+          <div class="col-xs-2">
+                <button type="button" class="btn btn-block btn-primary">Entry Proposal</button><br>
               </div>
+              <div class="col-xs-2">
+                <button type="button" class="btn btn-block btn-primary">Edit Proposal</button><br>
+              </div>
+            </div>
+
             <!-- /.box-body -->              
       </div>
       
@@ -176,26 +232,38 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-                <div class="col-xs-3">
-                  <label>Tanggal Survey : </label>
+                <table class="table table-striped">
+                <tr>
+                  <td>Tanggal Survey</td>
+                  <td>
                   <input type="date" class="form-control" placeholder="Tanggal">
-                </div>
-                <div class="col-xs-3">
-                  <label>Petugas Server 1 : </label>
+                  </td>
+                </tr>            
+                <tr>
+                  <td>Petugas Server 1</td>
+                  <td>
                   <input type="text" class="form-control">
-                </div>
-                <div class="col-xs-3">
-                  <label>Petugas Server 2 : </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Petugas Server 2</td>
+                  <td>
                   <input type="text" class="form-control">
-                </div>
-                <div class="col-xs-3">
-                  <label>Keterangan : </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Keterangan</td>
+                  <td>
+                  <textarea type="text" class="form-control" rows="3"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Usulan Pinjaman</td>
+                  <td>
                   <input type="text" class="form-control">
-                </div>
-                <div class="col-xs-3">
-                  <label>Usulan Pinjaman : </label>
-                  <input type="text" class="form-control">
-                </div>
+                  </td>
+                </tr>
+              </table>
             </div>
             <!-- /.box-body -->
           </div>
@@ -205,107 +273,96 @@
               <h3 class="box-title">Data Kontrak</h3>
             </div>
             <!-- /.box-header -->
-            <div class="box-body">
-              <table id="example1" class="table table-bordered table-striped">
-                <thead>
+              <div class="box-body">
+                <table class="table table-striped">
+                  <tr>
+                    <td>No. ID</td>
+                    <td><input type="number" class="form-control" name="noid"></td>
+                  </tr>
                 <tr>
-                  <th>NO</th>
-                  <th>Tanggal</th>
-                  <th>Pokok</th>
-                  <th>Jasa</th>
-                  <th>Jumlah</th>
-                  <th>PB</th>
-                  <th>Keterangan</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0
+                  <td>Tanggal Realisasi</td>
+                  <td>
+                  <input type="date" class="form-control" placeholder="Tanggal">
                   </td>
-                  <td>Win 95+</td>
-                  <td> 4</td>
-                  <td>X</td>
-                  <td>10</td>
-                  <td>Yes</td>
                 </tr>
                 <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0
+                  <td>Tanggal Mulai Mencicil</td>
+                  <td>
+                  <input type="date" class="form-control" placeholder="Tanggal">
                   </td>
-                  <td>Win 95+</td>
-                  <td> 4</td>
-                  <td>X</td>
-                  <td>10</td>
-                  <td>Yes</td>
+                </tr>            
+                <tr>
+                  <td>Tanggal Jatuh Tempo</td>
+                  <td>
+                  <input type="date" class="form-control" placeholder="Tanggal">
+                  </td>
                 </tr>
                 <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0
+                  <td>Pinjaman</td>
+                  <td>
+                  <input type="text" class="form-control">
                   </td>
-                  <td>Win 95+</td>
-                  <td> 4</td>
-                  <td>X</td>
-                  <td>10</td>
-                  <td>Yes</td>
                 </tr>
                 <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0
+                  <td>Jasa Pinjaman</td>
+                  <td>
+                  <input type="text" class="form-control">
                   </td>
-                  <td>Win 95+</td>
-                  <td> 4</td>
-                  <td>X</td>
-                  <td>10</td>
-                  <td>Yes</td>
                 </tr>
                 <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0
+                  <td>% Jasa</td>
+                  <td>
+                  <input type="text" class="form-control">
                   </td>
-                  <td>Win 95+</td>
-                  <td> 4</td>
-                  <td>X</td>
-                  <td>10</td>
-                  <td>Yes</td>
                 </tr>
                 <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0
+                  <td>Lama Angsuran</td>
+                  <td>
+                  <input type="text" class="form-control">
                   </td>
-                  <td>Win 95+</td>
-                  <td> 4</td>
-                  <td>X</td>
-                  <td>10</td>
-                  <td>Yes</td>
                 </tr>
                 <tr>
-                  <td>Trident</td>
-                  <td>Internet
-                    Explorer 4.0
+                  <td>Tahun Salur</td>
+                  <td>
+                  <input type="text" class="form-control">
                   </td>
-                  <td>Win 95+</td>
-                  <td> 4</td>
-                  <td>X</td>
-                  <td>10</td>
-                  <td>Yes</td>
                 </tr>
-                </tbody>
+                <tr>
+                  <td>Kel. Kondite</td>
+                  <td>
+                  <input type="text" class="form-control">
+                  </td>
+                </tr>
+                <tr>
+                  <td>Tanggal Mutasi Bermasalah</td>
+                  <td>
+                  <input type="da" class="form-control">
+                  </td>
+                </tr>
               </table>
             </div>
             <div class="box-body">
-              <div class="col-xs-3">
-                <button type="button" class="btn btn-default btn-block">Buat Anggaran Tetap</button><br>
+              <div class="col-xs-2">
+                <button type="button" class="btn btn-block btn-primary">Buat Anggaran Tetap</button><br>
               </div>
-              <div class="col-xs-3">
-                <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#modal-jaminan">Data Jaminan</button><br>
+              <div class="col-xs-2">
+                <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-jaminan">Data Jaminan</button><br>
               </div>
+              <br><br><br>
+              <h4 class="box-title">Transfer</h4>
+               <div class="box-body">
+                <table class="table table-striped">
+                  <tr>
+                    <td>No. Check/BG</td>
+                    <td><input type="number" class="form-control" name="noid"></td>
+                  </tr>
+                  <tr>
+                    <td>Tanggal Check/BG</td>
+                    <td><input type="date" class="form-control"></td>
+                  </tr>
+                </table>
+              </div>
+                
             </div>
             <!-- /.box-body -->
           </div>
@@ -368,20 +425,29 @@
               <h3 class="box-title">Action</h3>
             </div>
             <div class="box-body">
-              <div class="col-xs-3">
-                <button type="button" class="btn btn-default btn-block">Tanggal</button><br>
+             
+              <ul class="pagination pagination-sm no-margin pull-left">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&raquo;</a></li>
+              </ul>
+          
+              <div class="col-xs-2">
+                <button type="button" class="btn btn-block btn-primary">Tanggal</button><br>
               </div>
-              <div class="col-xs-3">
-                <button type="button" class="btn btn-default btn-block">Keluar</button><br>
+              <div class="col-xs-2">
+                <button type="button" class="btn btn-block btn-primary">Keluar</button><br>
               </div>                
-              <div class="col-xs-3">
-                <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#modal-salurblnini">Salur Bulan Ini</button><br>
+              <div class="col-xs-2">
+                <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-salurblnini">Salur Bulan Ini</button><br>
               </div>
-              <div class="col-xs-3">
-                <button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#modal-salurthnini">Salur Tahun Ini</button><br>
+              <div class="col-xs-2">
+                <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#modal-salurthnini">Salur Tahun Ini</button><br>
               </div>
-              <div class="col-xs-3">
-                <button type="button" class="btn btn-default btn-block">Salur Bulan Ini/Sektor</button><br>
+              <div class="col-xs-2">
+                <button type="button" class="btn btn-block btn-primary">Salur Bulan Ini/Sektor</button><br>
               </div>
             </div>
           </div></center>
@@ -552,9 +618,7 @@
 
       <!-- Default box -->
         <!-- /.box-body -->
-        <div class="box-footer">
-          Footer
-        </div>
+
         <!-- /.box-footer-->
       </div>
       <!-- /.box -->
